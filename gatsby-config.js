@@ -1,59 +1,29 @@
-require(`dotenv`).config()
-
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
-
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
-  siteMetadata: {
-    siteTitle: `Angel Muñoz Sanchez`,
-    siteTitleAlt: `Angel Muñoz Sanchez - Portfolio`,
-    siteHeadline: `Angel Muñoz Sanchez`,
-    siteUrl: `https://angelmsanchez.com`,
-    siteDescription: `Portfolio Angel Muñoz Sanchez`,
-    siteImage: `/banner.jpg`,
-    author: `angelmsanchez85`,
-  },
-  trailingSlash: `never`,
   plugins: [
     {
-      resolve: `@lekoarts/gatsby-theme-cara`,
-      options: {},
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-theme-portfolio-minimal",
       options: {
-        name: `Angel Muñoz Sanchez`,
-        short_name: `Angel Muñoz Sanchez`,
-        description: `Portfolio Angel Muñoz Sanchez`,
-        start_url: `/`,
-        background_color: `#141821`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#f6ad55`,
-        display: `standalone`,
-        icons: [
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
+        siteUrl: "https://gatsby-starter-portfolio-minimal-theme.netlify.app/", // Used for sitemap generation
+        manifestSettings: {
+          favicon: "./content/images/favicon.png", // Path is relative to the root
+          siteName: "My Minimal Portfolio", // Used in manifest.json
+          shortName: "Portfolio", // Used in manifest.json
+          startUrl: "/", // Used in manifest.json
+          backgroundColor: "#FFFFFF", // Used in manifest.json
+          themeColor: "#000000", // Used in manifest.json
+          display: "minimal-ui", // Used in manifest.json
+        },
+        contentDirectory: "./content",
+        blogSettings: {
+          path: "/blog", // Defines the slug for the blog listing page
+          usePathPrefixForArticles: false, // Default true (i.e. path will be /blog/first-article)
+        },
+        // googleAnalytics: {
+        //     trackingId: "UA-XXXXXX-X",
+        //     anonymize: true, // Default true
+        //     environments: ["production", "development"] // Default ["production"]
+        // }
       },
     },
-    shouldAnalyseBundle && {
-      resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
-      options: {
-        analyzerMode: `static`,
-        reportFilename: `_bundle.html`,
-        openAnalyzer: false,
-      },
-    },
-  ].filter(Boolean),
-}
+  ],
+};

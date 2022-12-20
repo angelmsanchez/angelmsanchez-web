@@ -1,10 +1,10 @@
 {
-  "private": true,
-  "name": "angelmsanchez-web",
+  "author": "angelmsanchez",
   "description": "Portfolio sobre Angel Muñoz Sanchez",
-  "version": "0.0.1",
-  "author": "angelmsancehz",
+  "name": "angelmsanchez-web",
+  "private": true,
   "starter-name": "angelmsanchez-web",
+  "version": "0.0.1",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -14,15 +14,33 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
-    "@lekoarts/gatsby-theme-cara": "^5.0.0",
-    "gatsby": "^5.1.0",
-    "gatsby-plugin-manifest": "^5.1.0",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.30",
+    "gatsby": "^5.0.1",
+    "gatsby-theme-portfolio-minimal": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3"
-  }
+  },
+  "homepage": "https://https://angelmsanchez.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angelmsanchez/angelmsanchez-web"
+  },
+  "keywords": [
+    "react",
+    "gatsby",
+    "gatsby-theme",
+    "PWA",
+    "portfolio",
+    "showcase",
+    "minimal",
+    "animations",
+    "dark-mode",
+    "gdpr-compliant"
+  ]
 }
