@@ -1,4 +1,4 @@
-# Tailcast
+# Angel Muñoz Sánchez
 
 Dark themed website template built on AstroJS, designed for technological startup business.
 
@@ -7,7 +7,7 @@ Dark themed website template built on AstroJS, designed for technological startu
 Astro, React, Tailwind, Framer Motion
 
 ## Live link
-[https://tailcast.vercel.app/](https://tailcast.vercel.app/)
+[https://angelmsanchez.netlify.app](https://angelmsanchez.netlify.app)
 
 ##  Project Structure
 
