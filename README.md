@@ -1,54 +1,39 @@
-<img src="screenshot.png" alt="Gatsby Theme Portfolio Minimal Screenshot" width="700" />
+# Tailcast
 
-<a href="https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme" target="_blank">
-<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud" />
-</a>
+Dark themed website template built on AstroJS, designed for technological startup business.
 
-# Gatsby Starter Portfolio Minimal Theme
+## Tech stack:
 
-#### A Gatsby Starter Project to easily get started with the Portfolio Minimal Theme.
+Astro, React, Tailwind, Framer Motion
 
-Portfolio Minimal is a Gatsby Theme that let's you create outstanding one-page portfolios within minutes. This Gatsby Starter is a boilerplate project that has the theme pre-installed and pre-configured.
+## Live link
+[https://tailcast.vercel.app/](https://tailcast.vercel.app/)
 
-Just clone this Gatsby Starter, add the content. And that's it!
+##  Project Structure
 
-[Live Demo on Gatsby Cloud](https://gatsbystarterportfoliominimalt.gatsbyjs.io/) · [Live Demo on Netlify](https://gatsby-starter-portfolio-minimal-theme.netlify.app/) · [Portfolio Minimal Theme on Github](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal)
+```
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── assets
+│   │   ├── icons
+│   │   ├── images
+│   │   └── logos
+│   ├── components
+│   ├── layouts
+│   ├──  pages
+│   └── styles
+└── package.json
+```
 
----
+##  How to run
 
-## Installation
+All commands are run from the root of the project, from a terminal:
 
-1. Install the Gatsby CLI
+| Command                | Action                                             |
+| :--------------------- | :------------------------------------------------- |
+| `npm install`          | Installs dependencies                              |
+| `npm run dev`          | Starts local dev server at `localhost:3000`        |
+| `npm run build`        | Build your production site to `./dist/`            |
+| `npm run preview`      | Preview your build locally, before deploying       |
 
-   ```sh
-   npm install -g gatsby-cli
-   ```
-
-2. Create a new Gatsby site with the Portfolio Minimal Starter.
-
-   ```sh
-   gatsby new portfolio-minimal https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme
-   ```
-
-3. Once installed, you can begin developing your site.
-
-   ```sh
-   cd portfolio-minimal
-   gatsby develop
-   ```
-
-4. By default, the Portfolio Minimal Starter has a `content` directory at the root of your Gatsby site. There, you can edit the theme settings as well as add content for your sections. To learn more about it, have a look at the [Readme of Portfolio Minimal](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal/tree/main/gatsby-theme-portfolio-minimal#readme).
-
----
-
-## Issues?
-
-If you find any bugs or have feature suggestions, create a new issue or pull request 🙏
-
-Thanks a lot for using this starter! 💪
-
----
-
-<a href="https://www.buymeacoffee.com/kmuenster" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
-Konstantin Münster – [konstantin.digital](https://konstantin.digital)
