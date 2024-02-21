@@ -1,4 +1,4 @@
-export const TailcastLogo = () => (
+export const MainLogo = () => (
   <svg
     width="40"
     height="40"

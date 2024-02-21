@@ -1,7 +1,7 @@
 import { FacebookIcon } from "../assets/icons/FacebookIcon";
 import { InstagramIcon } from "../assets/icons/InstagramIcon";
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
-import { TwitterIcon } from "../assets/icons/TwitterIcon";
+import { MainLogo } from "../assets/logos/MainLogo";
+import { LinkedinIcon } from "../assets/icons/LinkedinIcon";
 
 const footerData = [
   {
@@ -28,52 +28,47 @@ const footerData = [
 export const Footer = () => {
   return (
     <footer>
-      <div className="pt-10  lg:pt-20 lg:pb-12 bg-customDarkBg1 radius-for-skewed ">
+      <div className="pt-10 pb-10 lg:pt-20 lg:pb-6 bg-customDarkBg1 radius-for-skewed ">
         <div className="container mx-auto px-4 w-4/5 md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3">
-          <div className="flex flex-wrap">
-            <div className="w-full lg:w-1/3 mb-16 lg:mb-0">
-              <div className="flex justify-center lg:justify-start items-center grow basis-0">
-                <div className="text-white mr-2 text-6xl">
-                  <TailcastLogo />
-                </div>
-                <div className="text-white font-['Inter'] font-bold text-xl">
-                  Angel Muñoz Sánchez
-                </div>
+          <div className="md:flex justify-between items-center">
+            <div className="flex justify-center lg:justify-start items-center">
+              <div className="text-white mr-2 text-6xl">
+                <MainLogo />
               </div>
-              <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
-                Dashboard images were made using free Dark Admin dashboard that
-                you can find
-                <a
-                  href="https://bootstrapious.com/p/bootstrap-4-dark-admin"
-                  target="_blank"
-                  className="text-gray-100 ml-1.5 "
-                  aria-label="DarkAdmin"
-                >
-                  here.
-                </a>
-              </p>
-              <div className="w-36 mx-auto lg:mx-0">
-                <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
-                >
-                  <FacebookIcon />
-                </a>
-                <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
-                >
-                  <TwitterIcon />
-                </a>
-                <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
-                >
-                  <InstagramIcon />
-                </a>
+              <div className="text-white font-['Inter'] font-bold text-xl">
+                Angel Muñoz
               </div>
             </div>
-            <div className="w-full lg:w-2/3  lg:pl-16 hidden lg:flex flex-wrap justify-between">
+            <p className="mt-6 mb-6 md:mt-0 md:mb-0 text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
+              Front End Developer since 2013
+            </p>
+            <div className="w-36 mx-auto lg:mx-0">
+              <a
+                className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
+                href="https://www.facebook.com/angel.munoz.967/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FacebookIcon />
+              </a>
+              <a
+                className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
+                href="https://www.linkedin.com/in/angel-mu%C3%B1oz-sanchez-10229418/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedinIcon />
+              </a>
+              <a
+                className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
+                href="https://www.instagram.com/il_cotos/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <InstagramIcon />
+              </a>
+            </div>
+            {/* <div className="w-full lg:w-2/3  lg:pl-16 hidden lg:flex flex-wrap justify-between">
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
                 <h3 className="mb-6 text-2xl font-bold text-white">Products</h3>
                 <ul>
@@ -124,10 +119,10 @@ export const Footer = () => {
                   ))}
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
-          <p className="lg:text-center text-sm text-gray-400 border-t border-[rgb(255,255,255,0.2)] pt-12 mt-16 hidden lg:block">
-            &copy; 2022. MIT license.
+          <p className="lg:text-center text-sm text-gray-400 border-t border-[rgb(255,255,255,0.2)] pt-6 mt-6 md:mt-16">
+            &copy; 2024 Angel Muñoz. All rights reserved.
           </p>
         </div>
       </div>
