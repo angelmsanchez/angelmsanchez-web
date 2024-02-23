@@ -3,7 +3,7 @@ export const CssLogo = () => (
     width="107"
     height="32"
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1200.000000 600.000000"
+    viewBox="0 0 2000 600"
     className="fill-[rgb(174,178,183)] "
   >
     <g
